@@ -1,8 +1,12 @@
+
+
+
 <?php
+
 class Configuration {
 
     public function getDatabase(){
-        return new db;
+        return new db();//Quizas va sin parentesis
     }
 
     private function getPrinter(){
@@ -16,3 +20,4 @@ class Configuration {
 }
 
 ?>
+
