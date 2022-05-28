@@ -9,7 +9,7 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
-    include_once 'vistas/home.php';
+    include_once 'view/home.php';
 
 }else if(isset($_POST['username']) && isset($_POST['password'])){
     
@@ -22,15 +22,15 @@ if(isset($_SESSION['user'])){
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
-        include_once 'vistas/home.php';
+        include_once 'view/home.php';
     }else{
         //echo "No existe el usuario";
         $errorLogin = "Nombre de usuario y/o password incorrecto";
-        include_once 'vistas/login.php';
+        include_once 'view/login.php';
     }
 }else{
     //echo "login";
-    include_once 'vistas/login.php';
+    include_once 'view/login.php';
 }
 
 

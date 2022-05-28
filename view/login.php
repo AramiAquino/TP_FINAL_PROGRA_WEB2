@@ -1,4 +1,4 @@
-<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sesiones</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="public/main.css">
 </head>
 <body>
     <form action="" method="POST">
@@ -25,4 +25,3 @@
     </form>
 </body>
 </html>
--->
